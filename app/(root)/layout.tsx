@@ -16,10 +16,10 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex flex-col h-screen w-screen bg-blue-100 p-4 gap-4`}
+        className={`${inter.className} flex h-screen w-screen flex-col gap-4 bg-blue-100 p-4`}
       >
         <Header />
-        <div className="gap-4 flex w-full h-full">
+        <div className="flex h-full w-full gap-4">
           <LeftSidebar />
           {children}
           <RightSideBar />

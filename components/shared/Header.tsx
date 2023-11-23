@@ -9,7 +9,7 @@ type Props = {};
 const Header = (props: Props) => {
   return (
     <Box className="flex h-fit w-full">
-      <nav className="flex w-full bg-white py-4 px-8 rounded-lg justify-between items-center">
+      <nav className="flex w-full items-center justify-between rounded-lg bg-white px-8 py-4">
         <Link href="/">
           <Image
             width={36}
