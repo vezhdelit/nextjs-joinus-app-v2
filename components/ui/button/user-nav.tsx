@@ -22,7 +22,7 @@ const UserNav = () => {
           </Avatar>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56" align="end" forceMount>
+      <DropdownMenuContent className="w-48" align="end" forceMount>
         <DropdownMenuLabel className="font-normal">
           <div className="flex flex-col space-y-1">
             <p className="text-sm font-medium leading-none">shadcn</p>
@@ -34,16 +34,24 @@ const UserNav = () => {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <Link href="/account">Account</Link>
+            <Link className=" flex w-full" href="/account">
+              Account
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Link href="/Settings">Settings</Link>
+            <Link className=" flex w-full" href="/Settings">
+              Settings
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuGroup>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <form action="/auth/signout" method="post">
-            <button>Log out </button>
+          <form
+            className="flex w-full"
+            action="/api/auth/signout"
+            method="post"
+          >
+            <button className="flex w-full">Log out </button>
           </form>
         </DropdownMenuItem>
       </DropdownMenuContent>

@@ -24,7 +24,7 @@ const AuthForm = async () => {
         },
       }}
       providers={["google", "github", "discord"]}
-      redirectTo={`${getURL()}/auth/callback`}
+      redirectTo={`${getURL()}/api/auth/callback`}
     />
   );
 };
