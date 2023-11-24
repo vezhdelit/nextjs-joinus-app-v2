@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "@/components/shared/Header";
 import LeftSidebar from "@/components/shared/LeftSideBar";
 import RightSideBar from "@/components/shared/RightSideBar";
+import BottomBar from "@/components/shared/BottomBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           {children}
           <RightSideBar />
         </div>
+        <BottomBar />
       </body>
     </html>
   );
