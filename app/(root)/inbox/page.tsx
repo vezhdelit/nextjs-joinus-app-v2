@@ -6,7 +6,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <section className=" h-full flex-1 flex-col">
-      <Box className=" h-full w-full rounded-lg  p-4">Search</Box>
+      <Box className=" h-full w-full rounded-lg  p-4">Inbox</Box>
     </section>
   );
 };

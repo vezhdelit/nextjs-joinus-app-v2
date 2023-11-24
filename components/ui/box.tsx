@@ -14,6 +14,7 @@ const Box: React.FC<BoxProps> = ({ children, className }) => {
         w-full 
         rounded-lg 
         bg-white
+        dark:bg-midnight
         `,
         className
       )}

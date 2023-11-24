@@ -1,3 +1,4 @@
+import Box from "@/components/ui/box";
 import { Button } from "@/components/ui/button";
 import AccountForm from "@/components/ui/form/account-form";
 import { Database } from "@/types/supabase";
@@ -14,8 +15,8 @@ const Account = async () => {
   } = await supabase.auth.getSession();
 
   return (
-    <section className="max-[500px]:bg-white flex w-screen h-screen items-center justify-center">
-      <div className=" bg-white w-[500px] p-8 rounded-lg space-y-4">
+    <section className="flex h-screen w-screen items-center justify-center max-[500px]:bg-white dark:max-[500px]:bg-midnight">
+      <Box className=" h-fit w-[500px] space-y-4 rounded-lg bg-white p-8">
         <Button variant="link" className=" text-blue-500" asChild>
           <Link href="/">
             <MdArrowBackIosNew className="mr-1" /> Back
@@ -23,7 +24,7 @@ const Account = async () => {
         </Button>
 
         <AccountForm session={session} />
-      </div>
+      </Box>
     </section>
   );
 };

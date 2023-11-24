@@ -138,7 +138,7 @@ const AccountForm = ({ session }: { session: Session | null }) => {
 
       <div>
         <Button
-          className="bg-blue-500 hover:bg-blue-700 w-full"
+          className="w-full bg-blue-500 hover:bg-blue-700 dark:text-white"
           onClick={() =>
             updateProfile({ fullname, username, website, avatar_url })
           }
