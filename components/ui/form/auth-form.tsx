@@ -12,13 +12,16 @@ const AuthForm = () => {
   const [mounted, setMounted] = useState(false);
 
   const supabase = createClientComponentClient<Database>();
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme, systemTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) return null;
+
+  console.log(theme);
+  const mode = theme === "system" ? systemTheme : theme;
   return (
     <Auth
       supabaseClient={supabase}
@@ -34,7 +37,7 @@ const AuthForm = () => {
           },
         },
       }}
-      theme={theme}
+      theme={mode}
       providers={["google", "github", "discord"]}
       redirectTo={`${getURL()}/api/auth/callback`}
     />
