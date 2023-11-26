@@ -39,7 +39,9 @@ const AuthForm = () => {
       }}
       theme={mode}
       providers={["google", "github", "discord"]}
-      redirectTo={`${getURL()}/api/auth/callback`}
+      redirectTo={`${
+        process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
+      }/api/auth/callback`}
     />
   );
 };
