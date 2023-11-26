@@ -2,7 +2,6 @@
 
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import Map, { Marker, GeolocateControl } from "react-map-gl";
-import type mapboxgl from "mapbox-gl";
 
 import "mapbox-gl/dist/mapbox-gl.css";
 import { useTheme } from "next-themes";

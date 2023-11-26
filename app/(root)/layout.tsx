@@ -18,7 +18,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} flex h-screen w-screen flex-col gap-5 overflow-hidden bg-blue-100 p-5 dark:bg-neutral-950 `}
+        className={`${inter.className} flex h-screen w-screen flex-col gap-5 bg-blue-100 p-5 dark:bg-neutral-950 `}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
